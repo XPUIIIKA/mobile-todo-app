@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import { ToDoList } from "../components/ToDoList";
 import { gStyles } from "../styles/gStyles";
+import { endpoints, url } from "../gData";
 
 export function DeletedPage(){
 	const [todos, setTodos] = useState([]);
 
 	useEffect(() =>{
-		fetch("http://localhost:3000/tasks?isDeleted=true") 
+		fetch(`${url}${endpoints.tasks}?isDeleted=true`) 
 		.then(res => res.json())
 		.then(todos => setTodos(todos))
 	}, []);
@@ -19,7 +20,7 @@ export function DeletedPage(){
 			</View>
 			<View style={gStyles.contentBlock}>
 				{
-					todos.length? <ToDoList todos={todos}/> : <Text>Not found</Text>
+					<ToDoList todos={todos}/>
 				}
 			</View>
 		</View>

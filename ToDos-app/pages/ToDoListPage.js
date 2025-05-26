@@ -3,6 +3,7 @@ import { gStyles } from "../styles/gStyles";
 import { StatusBar } from "../components/StatusBar";
 import { useEffect, useState } from "react";
 import { ToDoList } from "../components/ToDoList";
+import { endpoints, url } from "../gData";
 
 export function ToDoListPage(){
 	const [status, setStatus] = useState("all");
@@ -10,12 +11,12 @@ export function ToDoListPage(){
 
 	useEffect(() =>{
 		if (status === "all"){
-			fetch("http://localhost:3000/tasks?isDeleted=false")
+			fetch(`${url}${endpoints.tasks}?isDeleted=false`)
 			.then(res => res.json())
 			.then(todos => setTodos(todos))
 		}
 		else{
-			fetch(`http://localhost:3000/tasks?isDeleted=false&status=${status}`)
+			fetch(`${url}${endpoints.tasks}?isDeleted=false&status=${status}`)
 			.then(res => res.json())
 			.then(todos => setTodos(todos))
 		}
@@ -29,7 +30,7 @@ export function ToDoListPage(){
 			<View style={gStyles.contentBlock}>
 				<StatusBar setStatus={setStatus}/>
 				{
-					todos.length? <ToDoList todos={todos}/> : <Text>Not found</Text>
+					<ToDoList todos={todos}/>
 				}
 			</View>
 		</View>

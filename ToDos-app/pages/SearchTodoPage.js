@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { gStyles } from "../styles/gStyles";
 import { useState } from "react";
 import { ToDoList } from "../components/ToDoList";
+import { endpoints, url } from "../gData";
 
 export function SearchTodoPage({navigation}){
 	const [todos, setTodos] = useState([]);
@@ -10,6 +11,15 @@ export function SearchTodoPage({navigation}){
 	function goBackBtn(){
 		navigation.navigate('Main');
 	}
+
+	function searchBtnHandler(title){
+		if(!title) return
+		fetch(`${url}${endpoints.tasks}`)
+		.then(res => res.json())
+		.then(data => data.filter(todo => todo.title.toLowerCase().includes(title.toLowerCase())) )
+		.then(data => setTodos(data));
+	}
+
 	return(
 	<View style={gStyles.pageBody}>
 
@@ -25,15 +35,13 @@ export function SearchTodoPage({navigation}){
 				placeholder="Enter title:"
 				onChangeText={setTitle}
 				/>
-				<Pressable style={gStyles.button}>
+				<Pressable style={gStyles.button} onPress={() => searchBtnHandler(title)}>
 					<Text>Search</Text>
 				</Pressable>
 			</View>
-			<View style={{marginTop: 10}}>
 			{
-				todos.length? <ToDoList todos={todos}/> : <Text>Not found</Text>
+				<ToDoList todos={todos}/>
 			}
-			</View>
 		</View>
 
 		<Pressable style={gStyles.goBackBtn} onPress={goBackBtn}>

@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, View } from "react-native";
 import { colors, gStyles } from "../styles/gStyles";
 import { Text, TextInput } from "react-native-web";
 import { useState } from "react";
+import { endpoints, url } from "../gData";
 
 export function AddNewTodoPage({navigation}){
 	const [title, setTitle] = useState('');
@@ -14,7 +15,7 @@ export function AddNewTodoPage({navigation}){
 	}
 
 	async function newId(){
-		const id = await fetch('http://localhost:3000/tasks')
+		const id = await fetch(`${url}${endpoints.tasks}`)
 		.then(response => response.json())
 		.then(todos => maxId(todos) + 1)
 		return id
