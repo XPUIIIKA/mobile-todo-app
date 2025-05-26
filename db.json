@@ -1,164 +1,204 @@
 {
-	"tasks": [
-	  {
-		"id": 1,
-		"title": "Завершить проект React Native",
-		"description": "Доделать все компоненты до пятницы",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-06-01T09:15:00Z"
-	  },
-	  {
-		"id": 2,
-		"title": "Купить продукты",
-		"description": "Молоко, яйца, хлеб, фрукты",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-02T18:30:00Z"
-	  },
-	  {
-		"id": 3,
-		"title": "Записаться на курсы английского",
-		"description": "Выбрать школу рядом с домом",
-		"status": "uncompleted",
-		"isDeleted": true,
-		"createdAt": "2023-05-28T11:20:00Z"
-	  },
-	  {
-		"id": 4,
-		"title": "Прочитать книгу 'Clean Code'",
-		"description": "Главы 5-8 до конца недели",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-05-30T22:45:00Z"
-	  },
-	  {
-		"id": 5,
-		"title": "Починить велосипед",
-		"description": "Заменить покрышку и смазать цепь",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-03T14:10:00Z"
-	  },
-	  {
-		"id": 6,
-		"title": "Оплатить счета за интернет",
-		"description": "Проверить баланс и пополнить",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-06-01T07:05:00Z"
-	  },
-	  {
-		"id": 7,
-		"title": "Создать резервную копию данных",
-		"description": "На внешний диск и облако",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-04T10:00:00Z"
-	  },
-	  {
-		"id": 8,
-		"title": "Старая удалённая задача",
-		"description": "Это больше не актуально",
-		"status": "completed",
-		"isDeleted": true,
-		"createdAt": "2023-04-15T16:40:00Z"
-	  },
-	  {
-		"id": 9,
-		"title": "Запланировать отпуск",
-		"description": "Выбрать даты и купить билеты",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-05T12:25:00Z"
-	  },
-	  {
-		"id": 10,
-		"title": "Обновить резюме",
-		"description": "Добавить последний проект",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-05-29T19:15:00Z"
-	  },
-	  {
-		"id": 11,
-		"title": "Позвонить родителям",
-		"description": "Обсудить планы на выходные",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-06T08:45:00Z"
-	  },
-	  {
-		"id": 12,
-		"title": "Удалённый тестовый проект",
-		"description": "Старая демо-задача",
-		"status": "completed",
-		"isDeleted": true,
-		"createdAt": "2023-03-10T13:50:00Z"
-	  },
-	  {
-		"id": 13,
-		"title": "Сходить в спортзал",
-		"description": "Тренировка ног и пресса",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-07T17:30:00Z"
-	  },
-	  {
-		"id": 14,
-		"title": "Написать статью в блог",
-		"description": "Про React Native Performance",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-06-03T21:20:00Z"
-	  },
-	  {
-		"id": 15,
-		"title": "Поменять пароли",
-		"description": "Обновить ключевые сервисы",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-08T09:10:00Z"
-	  },
-	  {
-		"id": 16,
-		"title": "Отменить подписку",
-		"description": "На ненужные сервисы",
-		"status": "uncompleted",
-		"isDeleted": true,
-		"createdAt": "2023-05-20T14:35:00Z"
-	  },
-	  {
-		"id": 17,
-		"title": "Сделать backup базы данных",
-		"description": "Перед обновлением сервера",
-		"status": "completed",
-		"isDeleted": false,
-		"createdAt": "2023-06-04T07:50:00Z"
-	  },
-	  {
-		"id": 18,
-		"title": "Проверить почту",
-		"description": "Ответить на срочные письма",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-09T11:05:00Z"
-	  },
-	  {
-		"id": 19,
-		"title": "Устаревшая задача",
-		"description": "Была выполнена автоматически",
-		"status": "completed",
-		"isDeleted": true,
-		"createdAt": "2023-04-28T16:15:00Z"
-	  },
-	  {
-		"id": 20,
-		"title": "Запланировать митап",
-		"description": "С командой на следующую неделю",
-		"status": "uncompleted",
-		"isDeleted": false,
-		"createdAt": "2023-06-10T13:40:00Z"
-	  }
-	]
-  }
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Завершить проект React Native",
+      "description": "Доделать все компоненты до пятницы",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-06-01T09:15:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Купить продукты",
+      "description": "Молоко, яйца, хлеб, фрукты",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-02T18:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Записаться на курсы английского",
+      "description": "Выбрать школу рядом с домом",
+      "status": "uncompleted",
+      "isDeleted": true,
+      "createdAt": "2023-05-28T11:20:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Прочитать книгу 'Clean Code'",
+      "description": "Главы 5-8 до конца недели",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-05-30T22:45:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Починить велосипед",
+      "description": "Заменить покрышку и смазать цепь",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-03T14:10:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Оплатить счета за интернет",
+      "description": "Проверить баланс и пополнить",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-06-01T07:05:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Создать резервную копию данных",
+      "description": "На внешний диск и облако",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-04T10:00:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Старая удалённая задача",
+      "description": "Это больше не актуально",
+      "status": "completed",
+      "isDeleted": true,
+      "createdAt": "2023-04-15T16:40:00Z"
+    },
+    {
+      "id": "9",
+      "title": "Запланировать отпуск",
+      "description": "Выбрать даты и купить билеты",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-05T12:25:00Z"
+    },
+    {
+      "id": "10",
+      "title": "Обновить резюме",
+      "description": "Добавить последний проект",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-05-29T19:15:00Z"
+    },
+    {
+      "id": "11",
+      "title": "Позвонить родителям",
+      "description": "Обсудить планы на выходные",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-06T08:45:00Z"
+    },
+    {
+      "id": "12",
+      "title": "Удалённый тестовый проект",
+      "description": "Старая демо-задача",
+      "status": "completed",
+      "isDeleted": true,
+      "createdAt": "2023-03-10T13:50:00Z"
+    },
+    {
+      "id": "13",
+      "title": "Сходить в спортзал",
+      "description": "Тренировка ног и пресса",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-07T17:30:00Z"
+    },
+    {
+      "id": "14",
+      "title": "Написать статью в блог",
+      "description": "Про React Native Performance",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-06-03T21:20:00Z"
+    },
+    {
+      "id": "15",
+      "title": "Поменять пароли",
+      "description": "Обновить ключевые сервисы",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-08T09:10:00Z"
+    },
+    {
+      "id": "16",
+      "title": "Отменить подписку",
+      "description": "На ненужные сервисы",
+      "status": "uncompleted",
+      "isDeleted": true,
+      "createdAt": "2023-05-20T14:35:00Z"
+    },
+    {
+      "id": "17",
+      "title": "Сделать backup базы данных",
+      "description": "Перед обновлением сервера",
+      "status": "completed",
+      "isDeleted": false,
+      "createdAt": "2023-06-04T07:50:00Z"
+    },
+    {
+      "id": "18",
+      "title": "Проверить почту",
+      "description": "Ответить на срочные письма",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-09T11:05:00Z"
+    },
+    {
+      "id": "19",
+      "title": "Устаревшая задача",
+      "description": "Была выполнена автоматически",
+      "status": "completed",
+      "isDeleted": true,
+      "createdAt": "2023-04-28T16:15:00Z"
+    },
+    {
+      "id": "20",
+      "title": "Запланировать митап",
+      "description": "С командой на следующую неделю",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2023-06-10T13:40:00Z"
+    },
+    {
+      "id": "21",
+      "title": "adgadg",
+      "description": "gadgadg",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2025-05-25T17:14:14.309Z"
+    },
+    {
+      "id": "22",
+      "title": "adgadg",
+      "description": "asfadsgadg",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2025-05-25T17:15:29.619Z"
+    },
+    {
+      "id": "23",
+      "title": "sfgfad",
+      "description": "gad",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2025-05-25T17:42:44.705Z"
+    },
+    {
+      "id": "24",
+      "title": "fghsf new",
+      "description": "adgadg",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2025-05-25T17:45:15.362Z"
+    },
+    {
+      "id": 25,
+      "title": "gadfgc new 2",
+      "description": "asdfa",
+      "status": "uncompleted",
+      "isDeleted": false,
+      "createdAt": "2025-05-25T18:05:52.330Z"
+    }
+  ]
+}

@@ -12,13 +12,13 @@ export function ToDo({todo}){
 			<Text style={gStyles.littleText}>{todo.description}</Text>
 			<View>
 				<View style={styles.titleBlock}>
-					<Pressable style={styles.button}>
+					<Pressable style={[gStyles.button, styles.btnPosition]}>
 						<Text>Change</Text>
 					</Pressable>
-					<Pressable style={styles.button}>
+					<Pressable style={[gStyles.button, styles.btnPosition]}>
 						<Text>{todo.isDeleted === true ? "Return": "Delete"}</Text>
 					</Pressable>
-					<Pressable style={[styles.button, {width: 102, alignItems: "center"}]}>
+					<Pressable style={[gStyles.button, styles.btnPosition, {width: 102}]}>
 						<Text>{todo.status === "completed"? "Uncompleted": "Completed"}</Text>
 					</Pressable>
 				</View>
@@ -47,11 +47,8 @@ const styles = StyleSheet.create({
 		marginBottom: 5,
 		flexDirection: 'row'
 	},
-	button:{
+	btnPosition:{
 		marginLeft: 10,
 		marginRight: 10,
-		padding: 10,
-		borderRadius: 15,
-		backgroundColor: colors.forButtons
 	}
 });

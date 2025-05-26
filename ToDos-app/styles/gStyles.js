@@ -66,4 +66,30 @@ export const gStyles = StyleSheet.create({
 		fontSize: 14,
 		color: colors.forText
 	},
+	goBackBtn:{
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: colors.forButtons,
+		width: 120,
+		height: 50,
+		borderRadius: 15,
+	},
+	input:{
+		width: "80%",
+		margenTop: 10,
+		marginBottom: 10,
+		fontSize: 18,
+		borderWidth: 1,
+		borderRadius: 15,
+		padding: 8,
+		color: colors.forText
+	},
+	button:{
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: colors.forButtons,
+		width: 65,
+		height: 35,
+		borderRadius: 15
+	}
 });

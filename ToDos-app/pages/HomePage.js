@@ -1,7 +1,16 @@
 import { gStyles } from "../styles/gStyles";
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 
-export function HomePage(){
+export function HomePage({navigation}){
+
+	function addBtnHandler(){
+		navigation.navigate('AddTodo');
+	}
+
+	function searchBtnHandler(){
+		navigation.navigate('SearchTodo')
+	}
+
 	return(
 		<View style={gStyles.pageBody}>
 			<View style = {gStyles.textBlock}>
@@ -10,12 +19,12 @@ export function HomePage(){
 			<View style = {gStyles.textBlock}>
 				<Text style = {gStyles.text}>This app your good friend in planning something big</Text>
 			</View>
-			<View style = {gStyles.btnBlock}>
+			<Pressable style = {gStyles.btnBlock} onPress={addBtnHandler}>
 				<Text style = {gStyles.text}>Add new todo</Text>
-			</View>
-			<View style = {gStyles.btnBlock}>
+			</Pressable>
+			<Pressable style = {gStyles.btnBlock} onPress={searchBtnHandler}>
 				<Text style = {gStyles.text}>Search todo</Text>
-			</View>
+			</Pressable>
 		</View>
 	);
 }
