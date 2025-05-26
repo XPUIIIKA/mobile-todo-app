@@ -31,7 +31,7 @@ export function AddNewTodoPage({navigation}){
 
 	async function addBtnHandler(title, description){
 		const newTodo = {
-			id: await newId(),
+			id: String(await newId()),
 			title,
 			description,
 			status: "uncompleted",

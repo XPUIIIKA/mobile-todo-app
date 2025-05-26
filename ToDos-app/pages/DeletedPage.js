@@ -19,7 +19,7 @@ export function DeletedPage(){
 			</View>
 			<View style={gStyles.contentBlock}>
 				{
-					todos? <ToDoList todos={todos}/> : <Text>Not found</Text>
+					todos.length? <ToDoList todos={todos}/> : <Text>Not found</Text>
 				}
 			</View>
 		</View>

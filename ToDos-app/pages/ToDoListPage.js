@@ -29,7 +29,7 @@ export function ToDoListPage(){
 			<View style={gStyles.contentBlock}>
 				<StatusBar setStatus={setStatus}/>
 				{
-					todos? <ToDoList todos={todos}/> : <Text>Not found</Text>
+					todos.length? <ToDoList todos={todos}/> : <Text>Not found</Text>
 				}
 			</View>
 		</View>
