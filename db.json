@@ -2,10 +2,10 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Завершить проект React Native",
-      "description": "Доделать все компоненты до пятницы",
-      "status": "completed",
-      "isDeleted": false,
+      "title": "Заверdшить проект React Native",
+      "description": "Доделать все тооочно все компоненты до пятницы",
+      "status": "uncompleted",
+      "isDeleted": true,
       "createdAt": "2023-06-01T09:15:00Z"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Купить продукты",
       "description": "Молоко, яйца, хлеб, фрукты",
       "status": "uncompleted",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2023-06-02T18:30:00Z"
     },
     {
@@ -21,14 +21,14 @@
       "title": "Записаться на курсы английского",
       "description": "Выбрать школу рядом с домом",
       "status": "uncompleted",
-      "isDeleted": true,
+      "isDeleted": false,
       "createdAt": "2023-05-28T11:20:00Z"
     },
     {
       "id": "4",
       "title": "Прочитать книгу 'Clean Code'",
       "description": "Главы 5-8 до конца недели",
-      "status": "completed",
+      "status": "uncompleted",
       "isDeleted": false,
       "createdAt": "2023-05-30T22:45:00Z"
     },
@@ -45,7 +45,7 @@
       "title": "Оплатить счета за интернет",
       "description": "Проверить баланс и пополнить",
       "status": "completed",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2023-06-01T07:05:00Z"
     },
     {
@@ -85,7 +85,7 @@
       "title": "Позвонить родителям",
       "description": "Обсудить планы на выходные",
       "status": "uncompleted",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2023-06-06T08:45:00Z"
     },
     {
@@ -101,7 +101,7 @@
       "title": "Сходить в спортзал",
       "description": "Тренировка ног и пресса",
       "status": "uncompleted",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2023-06-07T17:30:00Z"
     },
     {
@@ -109,7 +109,7 @@
       "title": "Написать статью в блог",
       "description": "Про React Native Performance",
       "status": "completed",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2023-06-03T21:20:00Z"
     },
     {
@@ -125,7 +125,7 @@
       "title": "Отменить подписку",
       "description": "На ненужные сервисы",
       "status": "uncompleted",
-      "isDeleted": true,
+      "isDeleted": false,
       "createdAt": "2023-05-20T14:35:00Z"
     },
     {
@@ -149,7 +149,7 @@
       "title": "Устаревшая задача",
       "description": "Была выполнена автоматически",
       "status": "completed",
-      "isDeleted": true,
+      "isDeleted": false,
       "createdAt": "2023-04-28T16:15:00Z"
     },
     {

@@ -1,15 +1,16 @@
 import { Text, View } from "react-native";
 import { gStyles } from "../styles/gStyles";
 import { StatusBar } from "../components/StatusBar";
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { ToDoList } from "../components/ToDoList";
 import { endpoints, url } from "../gData";
+import { useFocusEffect } from "@react-navigation/native";
 
 export function ToDoListPage(){
 	const [status, setStatus] = useState("all");
 	const [todos, setTodos] = useState([]);
 
-	useEffect(() =>{
+	function fetchTodos(){
 		if (status === "all"){
 			fetch(`${url}${endpoints.tasks}?isDeleted=false`)
 			.then(res => res.json())
@@ -20,7 +21,13 @@ export function ToDoListPage(){
 			.then(res => res.json())
 			.then(todos => setTodos(todos))
 		}
-	}, [status]);
+	}
+
+	useFocusEffect(
+		useCallback(() => {
+		  fetchTodos();
+		}, [status])
+	  );
 
 	return(
 		<View style={gStyles.pageBody}>
@@ -30,7 +37,7 @@ export function ToDoListPage(){
 			<View style={gStyles.contentBlock}>
 				<StatusBar setStatus={setStatus}/>
 				{
-					<ToDoList todos={todos}/>
+					<ToDoList todos={todos} fetchTodos={fetchTodos}/>
 				}
 			</View>
 		</View>

@@ -64,7 +64,7 @@ export function AddNewTodoPage({navigation}){
 				<TextInput
 				multiline={true}
 				numberOfLines={4}
-				style={styles.bigInput}
+				style={gStyles.bigInput}
 				value={description}
 				onChangeText={setDescription}
 				placeholder="Enter description:"
@@ -97,19 +97,6 @@ const styles = StyleSheet.create({
 		borderRadius: 15,
 		alignItems: 'center',
 		justifyContent: 'flex-start'
-	},
-	bigInput:{
-		width: "80%",
-		minHeight: 180,
-		maxHeight: 180,
-		margenTop: 10,
-		marginBottom: 10,
-		fontSize: 18,
-		borderWidth: 1,
-		borderRadius: 15,
-		textAlignVertical: 'top',
-		padding: 8,
-		color: colors.forText
 	},
 	divBtn:{
 		flex: 1,

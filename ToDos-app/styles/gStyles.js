@@ -49,7 +49,7 @@ export const gStyles = StyleSheet.create({
 		width: '60%',
 		height: 50,
 		borderRadius: 15,
-		backgroundColor: colors.forBtnBlock,
+		backgroundColor: colors.forButtons,
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
@@ -81,6 +81,19 @@ export const gStyles = StyleSheet.create({
 		fontSize: 18,
 		borderWidth: 1,
 		borderRadius: 15,
+		padding: 8,
+		color: colors.forText
+	},
+	bigInput:{
+		width: "80%",
+		minHeight: 180,
+		maxHeight: 180,
+		margenTop: 10,
+		marginBottom: 10,
+		fontSize: 18,
+		borderWidth: 1,
+		borderRadius: 15,
+		textAlignVertical: 'top',
 		padding: 8,
 		color: colors.forText
 	},
